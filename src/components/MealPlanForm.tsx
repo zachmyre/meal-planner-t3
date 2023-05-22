@@ -67,8 +67,12 @@ const MealPlanForm: React.FC = () => {
       console.log(response.data);
 
       const { mealPlan }: any = response.data;
-      console.log(JSON.parse(mealPlan));
-      setMealContainers(JSON.parse(mealPlan));
+      if(mealPlan){
+        setMealContainers(JSON.parse(mealPlan));
+      } else {
+        setError("Something went wrong, try again.");
+      }
+      
     } catch (error) {
       console.error(error);
       setError('Failed to generate meal plan. Please try again.');
