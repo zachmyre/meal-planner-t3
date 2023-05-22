@@ -1,0 +1,17 @@
+Form to generate meal ideas.
+
+Form Layout:
+Input textbox for comma seperated preferred food iteams (food they like)
+Input textbox for comma seperated not preferred food items (food they dont like)
+
+Select box for breakfast, lunch, dinner, desert
+
+Radio button for meal prep style or regular meal
+
+select box for amount of days
+
+submit button, reset button
+
+below form will be container for each day with a place
+for the title which will be the meal name, list for
+ingredients, then numbered list with cooking insutrctions
