@@ -41,8 +41,8 @@ const generateMealPlan = async (req: NextApiRequest, res: NextApiResponse) => {
     });
 
     // Step 3: Parse and extract the generated meal plan from the ChatGPT API response
-    const generatedText = completion.data.choices[0].text;
-    const mealPlan = extractMealPlan(generatedText);
+    const generatedText: any = completion.data.choices[0].text;
+    const mealPlan: any = extractMealPlan(generatedText);
     // Step 4: Return the generated meal plan as the API response
     res.status(200).json({ mealPlan });
   } catch (error) {
